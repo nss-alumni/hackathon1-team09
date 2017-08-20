@@ -29,4 +29,15 @@
 
 #thumbsdown{
     margin-top: 15px;
+
+a.btn.comments-button {
+  min-height: 42px;
+}
+
+textarea:focus {
+  border-bottom: 1px solid orange !important;
+  -webkit-box-shadow: 0 1px 0 0 orange !important;
+  -moz-box-shadow: 0 1px 0 0 orange !important;
+  box-shadow: 0 1px 0 0 orange !important;
+
 }

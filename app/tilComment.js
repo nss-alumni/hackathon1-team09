@@ -31,7 +31,7 @@
                       maxlength="1000"></textarea>
           </section>
         </section>
-        <a class="waves-effect waves-light btn"
+        <a class="waves-effect waves-light btn orange darken-2"
            ng-disabled="!tilComment.$valid || !ctrl.text"
            ng-click="ctrl.submit()">
           Comment
