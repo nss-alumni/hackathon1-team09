@@ -1,0 +1,53 @@
+/* NSS Colors 
+    Orange #f68b1f 
+    Red    #f0452d
+*/
+
+/* Overrides Materialize Row and Card Action margin+padding  */
+.card-row{
+    margin: 0 !important;
+}
+
+.card-bottom{
+    padding: 0 !important;
+    margin: 0 !important;
+    border-top: 2px solid #607d8b !important; 
+}
+
+/* Main Styles  */
+
+.til-textbox{
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.card-row i{
+    vertical-align: middle !important;
+    margin-left: 15px;
+    color:white;
+}
+
+#thumbsdown{
+    margin-top: 15px;
+}
+
+.bottom-row{
+    height: 70px;
+}
+
+a.btn.comments-button {
+  min-height: 42px;
+  margin-top: 10px;
+}
+
+textarea:focus {
+  border-bottom: 1px solid orange !important;
+  -webkit-box-shadow: 0 1px 0 0 orange !important;
+  -moz-box-shadow: 0 1px 0 0 orange !important;
+  box-shadow: 0 1px 0 0 orange !important;
+
+}
+
+.avatar {
+  max-height: 30px;
+}
