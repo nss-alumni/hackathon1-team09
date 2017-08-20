@@ -4,18 +4,22 @@
     bindToController: {
       til: '='
     },
-    controller: function($http) {
+    controller: function($http, tokenService) {
       const vm = this
 
       vm.submit = () => {
         const postData = {
-          text: vm.text,
-          userId: '',
-          tilId: vm.til.id
+          text: vm.text
         }
 
-        vm.til.comments.push(postData)
-        vm.text = undefined
+        $http.post(`https://4bb61cbf.ngrok.io/api/tils/${vm.til.id}/comments`, postData).then(response => {
+          const user = tokenService.user
+          postData.userName = user.name
+          postData.userImage = user.image_72
+          postData.createdAt = Date.now()
+          vm.til.comments.push(postData)
+          vm.text = undefined
+        })
       }
     },
     controllerAs: 'ctrl',
