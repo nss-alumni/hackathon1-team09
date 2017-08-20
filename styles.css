@@ -1,0 +1,21 @@
+/* NSS Colors 
+    Orange #f68b1f 
+    Red    #f0452d
+*/
+
+/* Overrides Materialize Row and Card Action margin+padding  */
+.card-row{
+    margin: 0 !important;
+}
+.card-bottom{
+    padding: 0 !important;
+    margin: 0 !important;
+    /* border-top: 2px solid #d84315 !important; */
+}
+
+/* Main Styles  */
+
+.til-textbox{
+    padding: 20px;
+    border-radius: 5px;
+}
