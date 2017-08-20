@@ -12,7 +12,7 @@
       }, error => {
         console.error(error)
       })
-    }  
+    }
   }
 
   angular.module('til-app').controller('CreateController', CreateController)
