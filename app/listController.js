@@ -22,7 +22,7 @@
 
     vm.upvote = til => {
       $http.post(`https://4bb61cbf.ngrok.io/api/tils/${til.id}/upvote`, {}).then(response => {
-        til.score = response.data.data[0].value
+        til.score += response.data.data[0].value
       }, error => {
         console.error(error)
       })
@@ -30,7 +30,7 @@
 
     vm.downvote = til => {
       $http.post(`https://4bb61cbf.ngrok.io/api/tils/${til.id}/downvote`, {}).then(response => {
-        til.score = response.data.data[0].value
+        til.score += response.data.data[0].value
       }, error => {
         console.error(error)
       })
