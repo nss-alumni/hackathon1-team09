@@ -4,15 +4,25 @@
   <meta charset="UTF-8">
   <title>TIL</title>
   <base href="/">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
   <script src="/node_modules/angular/angular.min.js"></script>
   <script src="/node_modules/angular-route/angular-route.min.js"></script>
   <script src="/app/app.js"></script>
   <script src="/app/listController.js"></script>
   <script src="/app/createController.js"></script>
+  <script src="/app/navController.js"></script>
+  <script src="/app/tilComment.js"></script>
+  <script src="/app/tokenService.js"></script>
 </head>
 <body>
   <header ng-include="'templates/navBar.html'"></header>
+
+  <header ng-controller="NavController as navCtrl">
+    <a ng-if="!navCtrl.user.name" href="https://slack.com/oauth/authorize?scope=identity.basic,identity.email,identity.team,identity.avatar&client_id=230121615159.228379318880&redirect_uri=https%3A%2F%2Fe42e664d.ngrok.io%2F%23&#33%2Flist"><img alt="Sign in with Slack" height="40" width="172" src="https://platform.slack-edge.com/img/sign_in_with_slack.png" srcset="https://platform.slack-edge.com/img/sign_in_with_slack.png 1x, https://platform.slack-edge.com/img/sign_in_with_slack@2x.png 2x" /></a>
+  </header>
+
   <main class="container" ng-view></main>
   <footer></footer>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"
