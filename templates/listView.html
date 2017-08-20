@@ -1,0 +1,31 @@
+<section ng-repeat="til in listCtrl.tils">
+    <div class="col s12 m7">
+      <h2 class="header"></h2>
+      <div class="card horizontal">
+        <!-- <div class="card-image">
+        <img src="https://lorempixel.com/100/190/nature/6">
+      </div> -->
+        <div class="card-stacked">
+          <div class="card-content orange darken-2">
+            <p class="white grey-text darken-2 til-textbox">{{til.text}}</p>
+          </div>
+          <span class="red"></span>
+          <div class="card-action card-bottom orange darken-2">
+            <div class="row card-row">
+              <div class="col m8">
+                <p><i class="material-icons">person</i>Posted By</p>
+              </div>
+
+              <div class="col m4">
+                <p>Comments</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <section class="til-comments" ng-repeat="comment in til.comments">
+    {{comment.text}}
+  </section>
+  <til-comment til="til"></til-comment>
+</section>
