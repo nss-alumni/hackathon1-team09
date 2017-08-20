@@ -1,1 +1,17 @@
-{{createCtrl.message}}
+<form class="col s12" name="tilForm">
+  <section class="row">
+    <section class="input-field col s12">
+      <label for="til-text">Today I Learned:</label>
+      <textarea id="til-text"
+                placeholder="TIL..."
+                class="materialize-textarea"
+                ng-model="createCtrl.tilText"
+                maxlength="500"></textarea>
+    </section>
+  </section>
+  <a class="waves-effect waves-light btn"
+     ng-disabled="!tilForm.$valid || !createCtrl.tilText"
+     ng-click="createCtrl.submit()">
+    Submit
+  </a>
+</form>
