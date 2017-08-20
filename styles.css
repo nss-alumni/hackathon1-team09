@@ -3,6 +3,10 @@
     Red    #f0452d
 */
 
+body{
+    background-color: lightgray;
+}
+
 /* Overrides Materialize Row and Card Action margin+padding  */
 .card-row{
     margin: 0 !important;
@@ -11,10 +15,30 @@
 .card-bottom{
     padding: 0 !important;
     margin: 0 !important;
-    border-top: 2px solid #607d8b !important; 
+    border-top: 4px solid #f0452d !important; 
 }
 
 /* Main Styles  */
+
+.logo{
+    height: 75px;
+    width: auto;
+    margin: 10px;
+}
+
+nav{
+    height: 100px;
+}
+
+.top li{
+    margin-top: 15px;
+}
+
+.slack-button{
+    margin-top: 12px;
+
+}
+
 
 .til-textbox{
     padding: 20px;
@@ -35,9 +59,31 @@
     height: 70px;
 }
 
+.posted-by{
+    padding-bottom: 5px !important;
+}
+
+.posted-by img{
+    margin-right: 10px;
+}
+
+.poster-name{
+    top: -10px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.time-box{
+    margin-top: 25px;
+}
+
+.time{
+    margin-right: 5px;
+}
+
 a.btn.comments-button {
   min-height: 42px;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 textarea:focus {
