@@ -6,6 +6,7 @@
 
     const fetchUserInfo = token => $http.get(`https://slack.com/api/users.identity?token=${token}`).then(response => {
       service.user = response.data.user
+      localStorage.setItem('slack-user-id', response.data.user.id)
     }, error => {
       console.error(error)
     })

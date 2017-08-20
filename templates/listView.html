@@ -1,5 +1,5 @@
-<section ng-repeat="til in listCtrl.tils">
-  <div class="col s12 m7">
+<section ng-repeat="til in listCtrl.tils" class="row">
+  <div class="col s12">
     <h2 class="header"></h2>
     <div class="card horizontal">
       <!-- <div class="card-image">
@@ -16,17 +16,27 @@
               <p><i class="material-icons">person</i>Posted By</p>
             </div>
             <div class="col m4">
-              <button class="button"
-                      ng-click="listCtrl.loadComments(til); expanded=!expanded">Comments</button>
+              <a class="btn blue-grey comments-button waves-effect waves-light" ng-click="listCtrl.loadComments(til); expanded=!expanded">
+                Comments
+                <i class="material-icons">textsms</i>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <section ng-if="expanded">
-    <section class="til-comments" ng-repeat="comment in til.comments">
-      {{comment.text}}
+  <section ng-if="expanded" class="col s10 offset-s1">
+    <section class="til-comments card horizontal" ng-repeat="comment in til.comments">
+      <div class="card-stacked">
+        <div class="card-content orange darken-2">
+          <p class="white grey-text darken-2 til-textbox">{{til.text}}</p>
+        </div>
+        <span class="red"></span>
+        <div class="col 12">
+          <p><i class="material-icons">person</i>Posted By</p>
+        </div>
+      </div>
     </section>
     <til-comment til="til" ng-if="listCtrl.loggedIn"></til-comment>
   </section>

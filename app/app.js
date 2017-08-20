@@ -14,9 +14,10 @@
       const interceptor = {};
 
       interceptor.request = function(config) {
-        var token = localStorage.getItem('access-token');
+        const token = localStorage.getItem('access-token');
         if (token && config.url.indexOf('slack') === -1) {
-          config.headers['x-access-token'] = token;
+          config.headers['x-slack-user-id'] = localStorage.getItem('slack-user-id')
+          config.headers['x-access-token'] = token
         };
         return config; 
       }
