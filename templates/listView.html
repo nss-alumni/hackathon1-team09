@@ -1,0 +1,39 @@
+<section ng-repeat="til in listCtrl.tils">
+  <div class="col s12 m7">
+    <h2 class="header"></h2>
+    <div class="card horizontal">
+      <!-- <div class="card-image">
+        <img src="https://lorempixel.com/100/190/nature/6">
+      </div> -->
+      <div class="card-stacked">
+        <div class="card-content orange darken-2">
+          <div class="row card-row">
+            <div class="col m11">
+              <p class="white grey-text darken-2 til-textbox">{{til.text}}</p>
+            </div>
+            <div class="col m1">
+              <div class="row card-row"><i class="material-icons">thumb_up</i></div>
+              <div class="row card-row"><i id="thumbsdown" class="material-icons">thumb_down</i></div>
+            </div>  
+          </div>
+        </div>
+        <span class="red"></span>
+        <div class="card-action card-bottom red">
+          <div class="row card-row">
+            <div class="col m8">
+              <p><i class="material-icons">person</i>Posted By</p>
+            </div>
+
+            <div class="col m4">
+              <p>Comments</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="til-comments" ng-repeat="comment in til.comments">
+    {{comment.text}}
+  </section>
+  <til-comment til="til"></til-comment>
+</section>

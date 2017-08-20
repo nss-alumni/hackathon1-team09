@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "text": "TIL you can alias commands in bash!",
+    "upvoteCount": 0,
+    "downvoteCount": 0,
+    "userId": 1,
+    "comments": []
+  },
+  {
+    "id": 2,
+    "text": "TIL baorisen aoinawft awf awftoawfto awft",
+    "upvoteCount": 3,
+    "downvoteCount": 1,
+    "userId": 1,
+    "comments": [
+      {
+        "id": 1,
+        "text": "Cool man me too",
+        "userId": 1,
+        "createdAt": "2017-08-19T18:23:07-05:00"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "text": "TIL apoinawf awfdo awfdo arfdoafdawdfo doafdwoadwfo awfdi awfd afdwiu afdwoi adp",
+    "upvoteCount": 0,
+    "downvoteCount": 9,
+    "userId": 2,
+    "comments": [
+      {
+        "id": 2,
+        "text": "Cool man me too",
+        "userId": 1,
+        "createdAt": "2017-08-19T18:23:07-05:01"
+      },
+      {
+        "id": 3,
+        "text": "Cool man me too",
+        "userId": 1,
+        "createdAt": "2017-08-19T18:23:07-05:02"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "text": "TIL don't eat the yellow snow",
+    "upvoteCount": 10,
+    "downvoteCount": 20,
+    "userId": 2,
+    "comments": [
+      {
+        "id": 2,
+        "text": "Cool man me too",
+        "userId": 1,
+        "createdAt": "2017-08-19T18:23:07-05:01"
+      },
+      {
+        "id": 3,
+        "text": "Cool man me too",
+        "userId": 1,
+        "createdAt": "2017-08-19T18:23:07-05:02"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "text": "TIL oinwd wfodi awfdoinarst awtfohaftienawfttoatwawtowt",
+    "upvoteCount": 20,
+    "downvoteCount": 0,
+    "userId": 3,
+    "comments": []
+  },
+  {
+    "id": 6,
+    "text": "TIL you can alias commands in bash!",
+    "upvoteCount": 4,
+    "downvoteCount": 2,
+    "userId": 3,
+    "comments": []
+  }
+]
