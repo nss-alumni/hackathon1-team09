@@ -1,4 +1,10 @@
 <section ng-repeat="til in listCtrl.tils">
-  {{ til.text }}
+  <card>
+    {{til.text}}
+  </card>
+  <section class="til-comments" ng-repeat="comment in til.comments">
+    {{comment.text}}
+  </section>
+  <til-comment til="til"></til-comment>
 </section>
 
