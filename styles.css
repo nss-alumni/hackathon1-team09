@@ -29,9 +29,15 @@
 
 #thumbsdown{
     margin-top: 15px;
+}
+
+.bottom-row{
+    height: 70px;
+}
 
 a.btn.comments-button {
   min-height: 42px;
+  margin-top: 10px;
 }
 
 textarea:focus {
