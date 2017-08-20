@@ -1,21 +1,18 @@
 ;(function () {
-  const CreateController = function ($http, $location) {
+  const CreateController = function ($http, $location, ) {
     const vm = this
 
     vm.submit = () => {
       const postData = {
-        text: vm.tilText,
-        userId: ''
+        text: vm.tilText
       }
       $location.path('/list')
-      /*
-      $http.post('', postData).then(success => {
+      $http.post('https://4bb61cbf.ngrok.io/api/tils', postData).then(success => {
         $location.path('/list')
       }, error => {
-        // handle error
+        console.error(error)
       })
-      */
-    }  
+    }
   }
 
   angular.module('til-app').controller('CreateController', CreateController)
