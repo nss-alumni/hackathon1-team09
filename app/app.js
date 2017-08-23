@@ -3,10 +3,10 @@
 
   app.config(($routeProvider, $locationProvider, $httpProvider) => {
     $routeProvider.when('/list', {
-      templateUrl: './listView.html',
+      templateUrl: './hackathon1-team09/listView.html',
       controller: 'ListController as listCtrl'
     }).when('/create', {
-      templateUrl: './createView.html',
+      templateUrl: './hackathon1-team09/createView.html',
       controller: 'CreateController as createCtrl'
     }).otherwise({ redirectTo: '/hackathon1-team09/!#/list' })
 
