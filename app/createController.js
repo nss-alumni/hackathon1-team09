@@ -7,7 +7,7 @@
         text: vm.tilText
       }
       $location.path('/list')
-      $http.post('https://4bb61cbf.ngrok.io/api/tils', postData).then(success => {
+      $http.post('https://nss-til.herokuapp.com/api/tils', postData).then(success => {
         $location.path('/list')
       }, error => {
         console.error(error)

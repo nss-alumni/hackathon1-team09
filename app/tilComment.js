@@ -12,7 +12,7 @@
           text: vm.text
         }
 
-        $http.post(`https://4bb61cbf.ngrok.io/api/tils/${vm.til.id}/comments`, postData).then(response => {
+        $http.post(`https://nss-til.herokuapp.com/api/tils/${vm.til.id}/comments`, postData).then(response => {
           const user = tokenService.user
           postData.userName = user.name
           postData.userImage = user.image_72
