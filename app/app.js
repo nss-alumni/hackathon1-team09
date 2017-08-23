@@ -8,7 +8,7 @@
     }).when('/create', {
       templateUrl: './createView.html',
       controller: 'CreateController as createCtrl'
-    }).otherwise({ redirectTo: '/list' })
+    }).otherwise({ redirectTo: '/hackathon1-team09/!#/list' })
 
     $httpProvider.interceptors.push(function($q, $location) {
       const interceptor = {};
